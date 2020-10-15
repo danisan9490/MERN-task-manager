@@ -11,6 +11,7 @@ const FormTarea = () => {
 
   // Array destructuring para extraer el proyecto actual
   const [proyectoActual] = proyecto;
+
   return (
     <div className="formulario">
       <form>
