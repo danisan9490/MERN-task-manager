@@ -67,7 +67,14 @@ const FormTarea = () => {
       limpiarTarea();
     }
 
+    // Obtener y filtrar las tareas del proyecto actual
+    obtenerTareas(proyectoActual.id);
+
     // reiniciar el form
+    guardarTarea({
+      nombre: ''
+    })
+
   }
   return (
     <div className="formulario">
