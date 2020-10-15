@@ -26,8 +26,7 @@ exports.crearProyecto = async (req, res) => {
 }
 
 // Obtiene todos los proyectos del usuario actual
-exports.actualizarProyecto = async (req, res) => {
-
+exports.obtenerProyectos = async (req, res) => {
   try {
     const proyectos = await Proyecto.find({ creador: req.usuario.id }).sort({ creado: -1 });
     res.json({ proyectos });
