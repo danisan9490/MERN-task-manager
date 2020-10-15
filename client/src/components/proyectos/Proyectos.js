@@ -11,11 +11,11 @@ const Proyectos = () => {
 
       <div className="seccion-principal">
         <main>
-
+          <Barra />
           <div className="contenedor-tareas">
             <ListadoTareas />
           </div>
-          <Barra />
+
         </main>
         <FormTarea />
       </div>
